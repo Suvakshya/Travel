@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+}
+
+
+section {
+    padding: 2rem 9%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+
+.heading h1 {
+    padding-bottom: 2rem;
+}
+
+
+.heading p {
+    max-width: 60rem;
+    margin: auto;
+    color: var(--Grayish-Blue);
+    font-size: 1.7rem;
+}
+
+
+.all-btn {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    background-color: var(--Soft-Blue);
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.all-btn:hover {
+    background-color: transparent;
+    color: var(--Soft-Blue);
+    border: 2px solid var(--Soft-Blue);
+}
+
+
+:root {
+    --Soft-Blue: hsl(231, 69%, 60%);
+    --Soft-Red: hsl(0, 94%, 66%);
+    --Grayish-Blue: hsl(229, 8%, 60%);
+    --Very-Dark-Blue: hsl(229, 31%, 21%);
+    --text-shadow: .4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border: .2rem solid var(--green);
+}
+
+
+/* navbar sections starts */
+.header {
+    padding: 1rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    left: 0;
+    z-index: 10000;
+    background-color: #fff;
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+
+.header .logo {
+    cursor: pointer;
+    width: 20%;
+    height: 10%;
+
+}
+ .header .logo .img{
+    width: 100%;
+    height: 5%;
+
+}
+
+.header .navbar a {
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+
+.header .navbar a:hover {
+    color: var(--Soft-Red);
+}
+
+
+.header .navbar .btn {
+    padding: .6rem 3rem;
+    background-color: var(--Soft-Red);
+    color: #fff;
+    border-radius: .5rem;
+}
+
+.header .navbar .btn:hover {
+    color: var(--Soft-Red);
+    background-color: transparent;
+    border: 2px solid var(--Soft-Red);
+}
+
+#menu-btn {
+    padding: 1rem 1rem;
+    background-color: #eee;
+    font-size: 3rem;
+    color: var(--Soft-Blue);
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* navbar sections ends */
+
+
+/* home section starts  */
+
+.home {
+    padding-top: 15rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* main property for responsiveness */
+    gap: 1.5rem;
+}
+
+
+.home .image {
+    flex: 1 1 45rem;
+}
+
+
+.home .image img {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+
+.home .content {
+    flex: 1 1 45rem;
+}
+
+
+.home .content h1 {
+    font-size: 4.5rem;
+    padding-block-end: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
+
+.home .content p {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    max-width: 40rem;
+    color: var(--Grayish-Blue); 
+    padding-bottom: 4rem;
+}
+
+.home .content .home-btn {
+    padding: 1.3rem 2rem;
+    background-color: var(--Soft-Blue);
+    color: #fff;
+    font-size: 1.4rem;
+    border: 2px solid var(--Soft-Blue);
+    border-radius: .5rem;
+}
+
+
+.home .content .home-btn:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--Soft-Blue);
+}
+
+
+
+
+/* home section ends */
+
+
+
+/* about us section starts  */
+
+.Aboutus .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 3rem 0;
+}
+
+.Aboutus .row .image {
+    flex: 1 1 45rem;
+}
+
+
+.Aboutus .row .image img {
+    width: 100%;
+}
+
+
+
+.Aboutus .row .content {
+    flex: 1 1 45rem;
+}
+
+
+.Aboutus .row .content h1 {
+    font-size: 4rem;
+    padding: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
+
+
+.Aboutus .row .content p {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: var(--Grayish-Blue);
+    padding-bottom: 4rem;
+}
+
+/* about us section ends */
+
+
+/* destination section starts  */
+
+.destination .box-container {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.destination .box {
+    border: 2px solid var(--Soft-Blue);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.destination .box:hover {
+    border: 2px solid var(--Soft-Blue);
+    box-shadow: none;
+}
+
+
+.destination .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--Very-Dark-Blue);
+}
+
+.destination .box p {
+    font-size: 1.7rem;
+    padding-bottom: 2.5rem;
+    color: var(--Grayish-Blue);
+}
+.destination .image{
+    height: auto;
+    width: 100%;
+}
+.destination .image2{
+    height: 55%;
+    width: 100%;
+}
+
+
+/* destination section ends */
+
+
+
+/* footer section starts */
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.footer .credit {
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+
+.footer .credit span {
+    color: var(--Soft-Red);
+    cursor: pointer;
+}
+
+
+/* footer section ends */
+
+/* form validation starts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    
+    position: relative;
+    max-width: 470px;
+    width: 160%;
+    margin-left: 30%;
+    margin-top: 7%;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #fff;
+  
+}
+
+.container header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container form {
+    margin-top: 30px;
+}
+
+form .field {
+    margin-bottom: 20px;
+
+}
+
+form .input-field {
+    position: relative;
+    height: 55px;
+    width: 100%;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    border: 1px solid #d1d1d1;
+}
+
+.invalid input {
+    border-color: #d93025;
+}
+
+.input-field .show-hide {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.field .error {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    font-size: 13px;
+    display: none;
+}
+.field .error p{
+    color: red;
+}
+.field .error i{
+    color: red;
+}
+
+.invalid .error {
+    display: flex;
+}
+
+.error .error-icon {
+    margin-right: 6px;
+    font-size: 15px;
+}
+
+.create-password .error {
+    align-items: flex-start;
+}
+
+.create-password .error-icon {
+    margin: 4px;
+}
+
+.button {
+    margin: 25px 0 6px;
+}
+
+.button input {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: hsl(231, 69%, 60%);;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid hsl(231, 69%, 60%);;
+}
+
+.button input:hover {
+    background-color: transparent;
+    color: hsl(231, 69%, 60%);
+}
+/* form validation ends */
